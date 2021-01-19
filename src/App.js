@@ -7,7 +7,7 @@ export class App extends Component {
     return (
       <div>
         <h1>The Simple Component</h1>
-        <Header />
+        <Header branding= "Doctor's Contact Manager" />
       <Contact />
       </div>
     );
