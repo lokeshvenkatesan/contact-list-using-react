@@ -5,10 +5,10 @@ export class Contact extends Component {
     const {name,Email,phone}= this.props;
     return (
       <div>
-        <h4>NAME: {this.props.name}</h4>
+        <h4>NAME: {name}</h4>
         <ul>
-          <li>EMAIL: {this.props.Email}</li>
-          <li>PHONE: {this.props.phone}</li>
+          <li>EMAIL: {Email}</li>
+          <li>PHONE: {phone}</li>
         </ul>
       </div>
     )
