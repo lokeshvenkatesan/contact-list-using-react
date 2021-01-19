@@ -6,7 +6,7 @@ const Header =(props)=>{
   const {branding} = props;
   return(
     <div>
-      <h1>
+      <h1 style={{color:'purple', fontSize:'25px'}}>
       {branding}
       </h1>
     </div>
