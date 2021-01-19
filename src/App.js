@@ -8,13 +8,14 @@ export class App extends Component {
     return (
       <div>
        
-        <Header branding= "Doctor's Contact Manager" />
-        <Contact name= "Mohan"
+        <Header branding= "" />
+        {/* <Contact name= "Mohan"
           Email= "mohan@gmail.com"
-          phone="9093939922" />
-        <Contact name= "Lokesh"
-          Email= "lokesh@gmail.com"
-          phone="903232898" />
+          phone="9093939922" /> */}
+        <Contact name= "Hello from Home"/>
+      
+          {/* Email= "lokesh@gmail.com"
+          phone="903232898"  */}
       
       {/* <Contact /> */}
       </div>
