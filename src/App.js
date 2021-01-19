@@ -6,8 +6,15 @@ export class App extends Component {
   render() {
     return (
       <div>
-        <h1>The Simple Component</h1>
+       
         <Header branding= "Doctor's Contact Manager" />
+        <Contact name= "Mohan"
+          Email= "mohan@gmail.com"
+          phone="9093939922" />
+        <Contact name= "Lokesh"
+          Email= "lokesh@gmail.com"
+          phone="903232898" />
+      
       <Contact />
       </div>
     );
