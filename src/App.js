@@ -15,7 +15,7 @@ export class App extends Component {
           Email= "lokesh@gmail.com"
           phone="903232898" />
       
-      <Contact />
+      {/* <Contact /> */}
       </div>
     );
   }
