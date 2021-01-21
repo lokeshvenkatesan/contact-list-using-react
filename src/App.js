@@ -14,11 +14,7 @@ export class App extends Component {
     }
   }
 
-  // In this way you can fetch data using API and display it to UI.
-  // Now you've to first complete the UI according to that website, like display table of posts, add new button, new post form in a modal, 
-  // Also design contact page and after all UI is done fetch these APIs and display data in 
   
-// Actually am familiar with FUNC COMP, so this class componens create some problems like u can see below its not getting the function but yet we've defined it.. can you solve it
 
 // l
   
