@@ -14,7 +14,7 @@ export class Contact extends Component {
     const {name,Email,phone}= this.props;
     return (
       <div>
-        <h1> {name}</h1>
+        <h1 align='center'> {name}</h1>
         {/* <ul>
           <li>{Email}</li>
           <li>{phone}</li>
