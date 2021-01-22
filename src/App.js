@@ -3,6 +3,10 @@ import Contact from './components/Contact';
 import Header from './components/Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
+import { Button } from '@material-ui/core';
+import PostCard from './components/Atoms/Card';
+// import Postcard from './components/postPage/postPage';
+// import Postcard from './components/authorspage/authorspage'
 
 export class App extends Component {
   constructor(props) {
@@ -14,10 +18,6 @@ export class App extends Component {
     }
   }
 
-  
-
-// l
-  
   FetchPosts = async ()=> {    // Here we use "async" keyword to change the type of function to ASYNCHRONOUS FUNCTION
   await axios('https://jsonplaceholder.typicode.com/todos/1')
   .then((response)=>{
@@ -40,12 +40,20 @@ componentDidMount(){ //This is inbuit Lifecycle method of React CLass Components
       <div>
        
         <Header branding= "" />
-        {/* <Contact name= "Mohan"
-          Email= "mohan@gmail.com"
-          phone="9093939922" /> */}
         <Contact name= "Hello from Home"/>
+        <button>Jaye</button>
+        <Button variant="contained" color="secondary">Hello World</Button>;
+        <PostCard />
 
-        <h1>User DATA Fetched</h1>
+
+        {/*But now see when we use Button tag of Material-UI, what type of button is rendered
+        You need very less styling 
+        
+        Likewise button, there are many more components available in UI library
+        
+        In documentation of components, Component API means the properties it accepts, like we've given VARIANT and COLOR properties*/}
+
+        {/* <h1>User DATA Fetched</h1>
         {
           this.state.data!=null?
           
@@ -57,14 +65,17 @@ componentDidMount(){ //This is inbuit Lifecycle method of React CLass Components
         </ul> : <ul>
           <li>Nothing to show</li>
           
-        </ul>
+        </ul> */}
       
     }
+      
+          
           {/* Email= "lokesh@gmail.com"
           phone="903232898"  */}
-      
       {/* <Contact /> */}
-          
+      {/* <Contact name= "Mohan"
+        Email= "mohan@gmail.com"
+        phone="9093939922" /> */}
       </div>
     );
   }
