@@ -14,34 +14,6 @@ function HomeComponent(props){
                 </div>
             </div><br/><br/>
 
-            <div className='row'>
-                <div className="col-sm">
-                    <p style={{'text-align':'center'}}></p>
-                    
-                </div>
-            </div>
-
-            <div className='row'>
-                <div className="col-sm">
-                    <p style={{'text-align':'center'}}></p>
-                    
-                </div>
-            </div>
-
-            <div className='row'>
-                <div className="col-sm">
-                    <p style={{'text-align':'center'}}></p>
-                    
-                </div>
-            </div>
-
-            <div className='row'>
-                <div className="col-sm">
-                    <p style={{'text-align':'center'}}>
-                    </p>
-                </div>
-            </div>
-
     </div>
     )
 }
