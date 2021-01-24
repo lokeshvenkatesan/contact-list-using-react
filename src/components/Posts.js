@@ -9,7 +9,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
-
+// 
 
 function Posts() {
 
@@ -37,7 +37,7 @@ function Posts() {
                 </div>
             </div> <hr/>
             <div >
-            {posts!=undefined?
+            {posts!==undefined?
                 posts.map((item,index)=> <Card className={classes.root}>
                 <CardContent>
                  

@@ -10,7 +10,7 @@ function HomeComponent(props){
            
             <div className='row'>
                 <div className="col-sm">
-                    <h3 style={{'text-align':'center'}}>WELCOME!!</h3>
+                    <h1 style={{'text-align':'center'}}>WELCOME!!</h1>
                 </div>
             </div><br/><br/>
 

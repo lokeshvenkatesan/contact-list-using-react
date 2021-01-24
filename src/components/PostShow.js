@@ -1,6 +1,12 @@
 import React from "react"
 import {Link} from "react-router-dom"
 import axios from "axios"
+import { makeStyles } from '@material-ui/core/styles';
+import Card from '@material-ui/core/Card';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
 
 class PostShow extends React.Component{
     constructor(props){
@@ -38,26 +44,34 @@ class PostShow extends React.Component{
     })
   
     return (
+       
         <div className='container'><br/>
-            <div className='row'>
-                    <div className="col-md">
-                        <h2 style={{'textAlign':'left'}}> USER : {this.state.user.name} </h2>
-                        
-                    </div>
-            </div><br/>
-            <div className='row'>
-                    <div className="col-md">
-                        <h4>TITLE:- {this.state.posts.title}</h4>
-                        
-                    </div>
-            </div><br/>
-            <div className='card'>
-                    <div className="col-md">                        
-                        <h5>BODY:- {this.state.posts.body}</h5>
-                    </div>
-            </div><br />
+
+<Card className={useStyles.root} variant="outlined">
+      <CardContent>
+        <Typography className={useStyles.title} color="textSecondary" gutterBottom>
+          USER DETAILS
+        </Typography>
+        <Typography variant="h5" component="h2">
+        Name:  {this.state.user.name}
+        </Typography>
+        <Typography className={useStyles.pos} color="textSecondary">
+        TITLE:- {this.state.posts.title}
+        </Typography>
+        <Typography variant="body2" component="p">
+        BODY:- {this.state.posts.body}
+          <br />
+          {'"a benevolent smile"'}
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small">Learn More</Button>
+      </CardActions>
+    </Card>
+           <br />
             <h5>COMMENTS FOR THIS POST:-</h5>
             <div className='card'>
+                <hr />
             <ol>
             {
                 this.state.comments.map((comment)=>{
@@ -73,4 +87,22 @@ class PostShow extends React.Component{
     )
 }
 }
+
+const useStyles = makeStyles({
+    root: {
+      width: "80%",
+    },
+    bullet: {
+      display: 'inline-block',
+      margin: '0 2px',
+      transform: 'scale(0.8)',
+    },
+    title: {
+      fontSize: 14,
+    },
+    pos: {
+      marginBottom: 12,
+    },
+  });
+
 export default PostShow
